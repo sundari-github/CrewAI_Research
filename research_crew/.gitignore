@@ -11,3 +11,4 @@ dist/
 build/
 *.log
 research_crew/*.md
+research_crew/env.config
