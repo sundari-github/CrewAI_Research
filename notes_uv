@@ -1,0 +1,27 @@
+https://docs.crewai.com/en/installation
+# CrewAI uses the uv as its dependency management and package handling tool. 
+# It simplifies project setup and execution, offering a seamless experience
+# powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+# uv tool install crewai
+# uv tool update-shell
+# uv tool list 
+# uv tool install crewai --upgrade
+
+# Flow is the overall structure of the project that defines how the different agents interact with each other. 
+# Agents are the workers in the project that perform specific tasks. 
+# Tools are the resources that the agents can use to perform their tasks.
+# Crew refers to collection of agents and tools.
+# Flow can directly select agents or select a sub-crew, consisting of many agents, to accomplish the overall goal.
+
+# crewai create crew research_crew
+# cd research_crew
+
+# Edit agents.yaml file and define the agent, role, goal and backstory. 
+# Edit tasks.yaml file and define the task, description, expected_output and agent. 
+# Edit the crew.py file and define the crew, agents and tasks.
+# Edit main.py file to add inputs and run the crew.
+
+# uv run crewai run # This is the method name inside main.py. This command is to be run from the dir where the toml file is
+
+# To generate a new Gmail account app password
+# Start-Process "https://myaccount.google.com/apppasswords"
